@@ -7,8 +7,8 @@
     $message = trim($_POST["message"]);
 
     // Check the data.
-    if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location:https://kofinakua.000webhostapp.com/index.html?success=1");
+     (null($name) OR null($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location:https://https://dglitxh.github.io/success=1");
         exit;
     }
 
@@ -30,6 +30,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location:https://kofinakua.000webhostapp.com/index.html?success=-1");
+    header("Location:https://https://dglitxh.github.io/?success=-1");
 
 ?>
