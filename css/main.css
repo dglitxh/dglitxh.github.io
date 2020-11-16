@@ -1,0 +1,144 @@
+.slider .btn{
+    margin-top:20px ;
+    
+}
+
+.autocomplete-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.section-follow .fa-4x{
+    margin: 5px 10px;
+}
+.section-contact h5{
+    margin-bottom: 30px;
+
+}
+.teal{
+    width: 100%;
+    height: 70px;
+    
+    padding-top: 1px;
+}
+.container{
+    padding-top: 0px;
+    padding-bottom: 40px;
+  
+}
+
+.login-box{
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    color: black;
+}
+::-webkit-input-placeholder{
+    color: rgba(26, 25, 25, 0.753);
+}
+:-ms-input-placeholder{
+    color: rgba(26, 25, 25, 0.753);
+}
+::placeholder{
+    color: rgba(26, 25, 25, 0.753);
+}
+
+.side-nav{
+    background:  rgba(0, 128, 128, 0.966) ;
+    
+    
+}
+
+
+
+.footer h4{
+    font-size: 10%;
+}
+
+.container{
+    height: 1%;
+    padding-top: 2px;
+}
+
+.location-box{
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    color: black;
+}
+
+
+   
+.wedding-details{ 
+    display: block;
+    background-image: url(img/flower-pink.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    color: black;
+    background-attachment: fixed;
+}
+
+.wedding-details h2,
+.wedding-details h3{
+    color: teal;
+}
+
+
+.detail-box{
+    text-align: center;
+}
+
+.george{
+    font-size: 10px;
+}
+
+.extra{
+    background-image: url(img/couple-1853499_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: block;
+    text-align: center;
+    height: 50vh;
+ 
+    font-size: 150%;
+    padding: 20px;
+ 
+}
+
+.extra h3{
+   
+    background-size: cover;
+    font-family: dancing script, raleway, sans-serif;
+    display: block;
+    font-size: 200%;
+    padding: 40px;
+}
+
+.quote{
+   font-family: dancing script, raleway, sans-serif;
+   margin-top: 50px;
+   width: 80%;
+   display: block;
+   margin-left: 10%;
+   padding: 5px;
+   text-align: center;
+
+}
+.form-message{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10%;
+    border-radius: 4px;
+    margin-bottom: 20px;    
+}
+
+.success{
+    background-color: teal;
+}
+
+.error{
+    background-color: rgba(255, 0, 0, 0.562);
+}
