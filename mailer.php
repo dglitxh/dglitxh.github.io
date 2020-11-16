@@ -7,7 +7,7 @@
     $message = trim($_POST["message"]);
 
     // Check the data.
-     (null($name) OR null($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+     if(null($name) OR null($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location:https://https://dglitxh.github.io/success=1");
         exit;
     }
