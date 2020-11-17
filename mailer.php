@@ -1,35 +1,59 @@
 <?php
 
-    // Get the form fields, removes html tags and whitespace.
-    $name = strip_tags(trim($_POST["name"]));
-    $name = str_replace(array("\r","\n"),array(" "," "),$name);
-    $phone = trim($_POST["phone"]);
-    $message = trim($_POST["message"]);
+    <?php
+if(!isset($_POST['submit']))
+{
+	//This page should not be accessed directly. Need to submit the form.
+	echo "error; you need to submit the form!";
+}
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
 
-    // Check the data.
-     if(null($name) OR null($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location:https://https://dglitxh.github.io/success=1");
-        exit;
-    }
+//Validate first
+if(empty($name)||empty($phone)) 
+{
+    echo "Name and email are mandatory!";
+    exit;
+}
 
-    // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "ydglitch@gmail.com";
 
-    // Set the email subject.
-    $subject = "New contact from $name";
-
-    // Build the email content.
-    $email_content = "Name: $name\n";
-    $phone_content .= "Phone: $phone\n";
-    $email_content .= "Message:\n$message\n";
-
-    // Build the email headers.
-    $email_headers = "From: $name <$email>";
-
-    // Send the email.
-    mail($recipient, $subject, $email_content, $email_headers);
+$email_from = 'ydglitch@gmail.com';//<== update the email address
+$email_subject = "New Form submission";
+$email_body = "You have received a new message from $name.\n".
+    "Here is the message:\n $message".
     
-    // Redirect to the index.html page with success code
-    header("Location:https://https://dglitxh.github.io/?success=-1");
+$to = "ydglitch@gmail.com";//<== update the email address
+$headers = "From: $email_from \r\n";
+$headers .= "Reply-To: $visitor_email \r\n";
+//Send the email!
+mail($to,$email_subject,$email_body,$headers);
+//done. redirect to thank-you page.
+header('Location: thank-you.html');
 
+
+// Function to validate against any email injection attempts
+function IsInjected($str)
+{
+  $injections = array('(\n+)',
+              '(\r+)',
+              '(\t+)',
+              '(%0A+)',
+              '(%0D+)',
+              '(%08+)',
+              '(%09+)'
+              );
+  $inject = join('|', $injections);
+  $inject = "/$inject/i";
+  if(preg_match($inject,$str))
+    {
+    return true;
+  }
+  else
+    {
+    return false;
+  }
+}
+   
+?> 
 ?>
