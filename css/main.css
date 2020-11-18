@@ -135,10 +135,24 @@
     margin-bottom: 20px;    
 }
 
-.success{
-    background-color: teal;
+.rsvp{
+    height: 50vh;
+    display: block;
+    text-align: center;
+ 
 }
 
-.error{
-    background-color: rgba(255, 0, 0, 0.562);
+.rsvp h3{
+    padding: 15px;
+    font-family: dancing script, raleway;
+    color: teal;
+}
+
+.rsvp h5{
+    padding: 15px;
+    color: gray;
+}
+
+.rsvp a{
+    margin-top: 30px;
 }
