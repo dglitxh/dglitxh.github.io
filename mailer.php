@@ -18,7 +18,6 @@ if(empty($name)||empty($phone))
 }
 
 
-$email_from = 'ydee101@gmail.com';//<== update the email address
 $email_subject = "New Form submission";
 $email_body = "You have received a new message from $name.\n".
     "Here is the message:\n $message".
