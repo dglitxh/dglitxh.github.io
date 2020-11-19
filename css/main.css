@@ -156,3 +156,13 @@
 .rsvp a{
     margin-top: 30px;
 }
+
+.row{
+    display: block;
+    text-align: center;
+}
+
+
+.row img{
+    height: 100vh;
+}
