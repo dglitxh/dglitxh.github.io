@@ -160,9 +160,10 @@
 .row{
     display: block;
     text-align: center;
+}
+.map-head{
     color: teal;
 }
-
 
 .row img{
     height: 100vh;
